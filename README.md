@@ -1,4 +1,4 @@
-# Code in Monochrome World
+# Code in Grayscale World
 
 Polychrome is evil.
 
