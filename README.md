@@ -88,9 +88,10 @@ https://github.com/abrookins/kant
 ## Monochrome Browser
 ### firefox 
 It it hard to tell if the text is a link or not. The following css uses underline for this.
-- Go to about:profile
-- Create <profile>/chrome/userChrome.css
+- Go to `about:profile`
+- Create `<profile>/chrome/userChrome.css`
 ```css
+/* userChrome.css */
 a {
     color: #000000 !important;
     background-color:transparent !important; /* necessary so link is always readable */
