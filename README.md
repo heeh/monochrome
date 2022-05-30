@@ -3,6 +3,7 @@
 Polychrome is evil.
 
 ## Monochrome System
+To convert linux system to grayscale, we might need `picom` or `compton`.
 ### picom (Best so far)
 ```bash
 # picom (better than compton, performance-wise)
@@ -32,6 +33,7 @@ Change picom to compton
 ./toggle-monitor-grayscale
 ```
 ### toggle-monitor-grayscale
+This script converts your whole system into grayscale.
 https://github.com/bubbleguuum/toggle-monitor-grayscale
 ```bash
 git clone https://github.com/heeh/toggle-monitor-grayscale
@@ -39,6 +41,7 @@ edit toggle-monitor-grayscale.sh
 ./toggle-monitor-grayscale
 ```
 ## Monochrome Terminal
+Linux .bashrc file usually contains ls --color and this makes directory hard to read. Let's override this.
 ### .dircolor
 ```bash
 #.dircolors
@@ -79,9 +82,12 @@ https://sachachua.com/blog/2009/01/emacs-basics-changing-the-background-color/
 M-x package-install monochrome-theme
 ```
 
+### Intellij Idea
+https://github.com/abrookins/kant
+
 ## Monochrome Browser
 ### firefox 
-Use underline for link
+It it hard to tell if the text is a link or not. The following css uses underline for this.
 - Go to about:profile
 - Create <profile>/chrome/userChrome.css
 ```css
@@ -163,6 +169,3 @@ cursor:
     blinking: Never
     blink_interval:   75
 ```
-
-
-
