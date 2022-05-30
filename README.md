@@ -165,3 +165,6 @@ cursor:
     blinking: Never
     blink_interval:   75
 ```
+### Monochrome File Manager
+midnight commander with seasons-winter16M works fine so far.
+```sudo apt install mc```
