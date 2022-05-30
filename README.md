@@ -26,7 +26,7 @@ sudo apt install compton
 git clone https://github.com/bubbleguuum/toggle-monitor-grayscale
 edit toggle-monitor-grayscale.sh
 ```
-### toggle-monitor-grayscale
+### toggle-monitor-grayscale.sh
 This script converts your whole system into grayscale.
 https://github.com/bubbleguuum/toggle-monitor-grayscale
 ```bash
