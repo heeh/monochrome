@@ -10,28 +10,21 @@ To convert linux system to grayscale, we might need `picom` or `compton`.
 # picom (better than compton, performance-wise)
 # dependencies
 sudo apt install -y libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson
-# Clone
+# Clone with ssh
 git clone --recursive git@github.com:yshui/picom.git
-# http
-git clone --recursive https://github.com/yshui/picom.git
+# Clone with https
+`git clone --recursive https://github.com/yshui/picom.git
 # Build
 meson --buildtype=release . build
 ninja -C build
-
 # Install
 ninja -C build install
 ```
 #### compton (Slower than picom)
 ```bash
 sudo apt install compton
-
 git clone https://github.com/bubbleguuum/toggle-monitor-grayscale
-
 edit toggle-monitor-grayscale.sh
-
-Change picom to compton
-
-./toggle-monitor-grayscale
 ```
 ### toggle-monitor-grayscale
 This script converts your whole system into grayscale.
@@ -46,7 +39,7 @@ Linux .bashrc file usually contains ls --color and this makes directory hard to 
 ### .dircolor
 ```bash
 #.dircolors
-LK                   0
+LK                    0
 CAPABILITY            0
 CHR                   0
 DIR                   1
@@ -149,6 +142,7 @@ colors:
     magenta:    "#E500E5"
     cyan:       "#00E5E5"
     white:      "#E5E5E5"
+
 # Cursor 
 cursor:
   # Cursor style
