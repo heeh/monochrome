@@ -4,7 +4,8 @@ Polychrome is evil.
 
 ## Monochrome System
 To convert linux system to grayscale, we might need `picom` or `compton`.
-### picom (Best so far)
+### Prerequisite
+#### picom (Best so far)
 ```bash
 # picom (better than compton, performance-wise)
 # dependencies
@@ -20,7 +21,7 @@ ninja -C build
 # Install
 ninja -C build install
 ```
-### compton (Slower than picom)
+#### compton (Slower than picom)
 ```bash
 sudo apt install compton
 
