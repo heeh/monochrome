@@ -103,6 +103,10 @@ a:visited {
 https://clcode.net/articles/color-schemes.md
 .config/alacritty/allacritty.yml
 ```bash
+# Enable 256 colors on emacs -nw
+env:
+    TERM: alacritty-direct
+
 #Font
 font:
   normal:
